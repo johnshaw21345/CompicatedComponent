@@ -135,8 +135,9 @@ class ClockViewTouchable @JvmOverloads constructor(
         secondPointerLength = panelRadius - 150
         drawDegrees(canvas)
         drawHoursValues(canvas)
-        drawNeedles(canvas)
         drawNumbers(canvas)
+        drawNeedles(canvas)
+        
 
         // todo 1: 每一秒刷新一次，让指针动起来
 
@@ -402,6 +403,10 @@ class ClockViewTouchable @JvmOverloads constructor(
 
 
 
+                }
+                
+                 MotionEvent.ACTION_UP-> {
+                    touchedNeedle = 3
                 }
             }
 
