@@ -18,6 +18,8 @@
 
 在ACTION_MOVE时计算手指触摸位置与表盘中心连线的角度，换算为时间，赋值给对应指针的时间，并invalidate()；
 
+* 在ACTION_UP时重置存储被选中指针的变量
+
 ### 通过在activity_clock中添加两个按钮并在ClockActivity中设置监听事件：
 
 按钮“SYNC_WITH_SYSTEM_TIME”会将时钟时间设定为系统当前时间；
@@ -30,3 +32,10 @@
 1.ClockView被重命名为了ClockViewTouchable
 
 2.Touch事件参考了https://blog.csdn.net/qq1271396448/article/details/82784315
+
+
+## 更新：
+
+1.修正了12点时转换时间会变成24点的问题
+
+2.修正了没有选中指针时总是默认选择时针，在拖动指针后默认拖动上次选中过的指针的问题
