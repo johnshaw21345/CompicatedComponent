@@ -29,4 +29,4 @@
 
 1.ClockView被重命名为了ClockViewTouchable
 
-2.Touch事件部分代码参考了https://blog.csdn.net/qq1271396448/article/details/82784315
+2.Touch事件参考了https://blog.csdn.net/qq1271396448/article/details/82784315
