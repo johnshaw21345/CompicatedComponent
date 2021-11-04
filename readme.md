@@ -14,17 +14,17 @@
 
 ### 通过重写onTouchEvent：
 
-在ACTION_DOWN时读取触摸位置，判断手指是否在指针尖端，以及触摸的是哪根指针；
+* 在ACTION_DOWN时读取触摸位置，判断手指是否在指针尖端，以及触摸的是哪根指针；
 
-在ACTION_MOVE时计算手指触摸位置与表盘中心连线的角度，换算为时间，赋值给对应指针的时间，并invalidate()；
+* 在ACTION_MOVE时计算手指触摸位置与表盘中心连线的角度，换算为时间，赋值给对应指针的时间，并invalidate()；
 
 * 在ACTION_UP时重置存储被选中指针的变量
 
 ### 通过在activity_clock中添加两个按钮并在ClockActivity中设置监听事件：
 
-按钮“SYNC_WITH_SYSTEM_TIME”会将时钟时间设定为系统当前时间；
+* 按钮“SYNC_WITH_SYSTEM_TIME”会将时钟时间设定为系统当前时间；
 
-按钮“SWITCH_BETWEEN_12H/24H”会将时间在小于12小时和大于12小时间切换，以克服拖动指针无法将时间设置为13点及以后的问题；
+* 按钮“SWITCH_BETWEEN_12H/24H”会将时间在小于12小时和大于12小时间切换，以克服拖动指针无法将时间设置为13点及以后的问题；
 
 
 ## 备注：
