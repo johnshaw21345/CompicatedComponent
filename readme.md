@@ -25,7 +25,7 @@
 按钮“SWITCH_BETWEEN_12H/24H”会将时间在小于12小时和大于12小时间切换，以克服拖动指针无法将时间设置为13点及以后的问题；
 
 
-##备注：
+## 备注：
 
 1.ClockView被重命名为了ClockViewTouchable
 
