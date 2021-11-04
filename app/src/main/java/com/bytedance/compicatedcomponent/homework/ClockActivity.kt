@@ -33,7 +33,7 @@ class ClockActivity : Activity() {
 
 
         findViewById<Button>(R.id.btn2).setOnClickListener {
-            if(clock.nowHours >= 13){
+            if(clock.nowHours >= 12){
                 clock.nowHours-=12
             }
             else{
